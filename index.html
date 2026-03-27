@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            height: 600vh;
+            background: linear-gradient(135deg, #142c57, #4f85e2);
+        }
+        
+        .logorz {
+            display: flexbox;
+            justify-content: center;
+            width: 125px;
+        }
+
+        .menu-principal {
+            margin: 0;
+            top: 0;
+            list-style: none;
+            background: #333;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-principal li {
+            position: relative;
+        }
+
+        .menu-principal a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .sous-menu {
+            display: none;
+            position: absolute;
+            background: #444;
+            list-style: none;
+            padding: 0;
+            min-width: 150px;
+        }
+
+        .menu-principal a:hover {
+            background: #555;
+        }
+
+        .dropdown:hover .sous-menu {
+            display: block;
+        }
+
+        .textebrother {
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 300px;
+        }
+
+        @media (max-width: 400px) {
+        }
+
+        .photodemoi {
+            padding: 20px;
+            max-width: 300px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu-principal">
+            <li class="dropdown">
+                <a href="#">Menu▾</a>
+                <ul class="sous-menu">
+                    <li><a href="#presentation">Presentation</a></li>
+                    <li><a href="#">Projet réaliser</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
+    
+        </ul>
+</nav>
+<h2 class="textebrother">Bonjour et bienvenue sur mon portfolio !</h2>
+<section class="textebrother" id="presentation">
+    <a>ctuellement étudiant en BTS SIO (Services Informatiques aux Organisations), je me spécialise dans le développement d'applications. Passionné par l'écosystème web, j'évolue en tant que développeur Full Stack débutant. À travers ce site, je vous invite à explorer mon univers technique : vous y découvrirez mon profil, les compétences que j'affine au quotidien, ainsi que les différents projets que j'ai réalisés durant ma formation. C'est pour moi l'occasion de vous montrer ma capacité à concevoir des solutions numériques complètes, du front-end au back-end. Vous trouverez également toutes les informations nécessaires pour me contacter et échanger sur d'éventuelles opportunités ou collaborations.</a>
+</section>
+<img class="photodemoi" src="photodemoi.png" alt="photodemoi">
+</body>
+</html>
